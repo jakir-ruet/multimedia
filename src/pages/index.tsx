@@ -15,6 +15,6 @@ export async function getServerSideProps() {
   const events = await res.json();
   console.log(events);
   return {
-    props: {},
+    props: { events },
   };
 }
