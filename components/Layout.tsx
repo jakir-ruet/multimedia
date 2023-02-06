@@ -9,6 +9,8 @@ export default function Layout({ title, keywords, description, children }) {
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
         <title>{title}</title>
         <meta name="keywords" content={keywords} />
         <meta name="description" content={description} />

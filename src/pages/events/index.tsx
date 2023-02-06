@@ -7,7 +7,9 @@ function Events() {
       description="event description"
       keywords="events keywords"
     >
-      <h1>I am events</h1>
+      <div className="container mx-auto">
+        <h1>Upcoming Events here</h1>
+      </div>
     </Layout>
   );
 }
