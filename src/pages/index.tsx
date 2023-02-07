@@ -1,5 +1,5 @@
 import Layout from 'components/Layout';
-import ItemList from '@/components/ItemList';
+import EventList from '@/components/EventList';
 import { API_URL } from '@/config/index';
 
 function Home({ events }) {
@@ -11,10 +11,13 @@ function Home({ events }) {
       description="we believe in best event management"
     >
       <div className="container mx-auto">
-        <h1 className="text-slate-500">Upcoming Event Here</h1>
+        <h1 className="text-slate-500">Upcoming Event Heregg</h1>
         {events.length === 0 && <h3>No Event Available Now</h3>}
         {events.map((individualEvent) => (
-          <ItemList key={individualEvent.id} events={individualEvent} />
+          <EventList
+            key={individualEvent.id}
+            individualEvent={individualEvent}
+          />
         ))}
       </div>
     </Layout>
